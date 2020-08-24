@@ -1,0 +1,69 @@
+body{
+    margin-left: 200px;
+}
+.forms-input {
+    display: flex;
+    flex-direction: row;
+}
+.form-input {
+    margin: 20px;
+    width: 200px;
+}
+.ng-select.custom {
+    width: 200px;
+}
+input{
+    height: 30px;
+}
+.submit-button {
+    position: relative;
+    top: 20px;
+    background-color: #4c5baf;
+    border: none;
+    color: white;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button-rent {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  .button-delete {
+    background-color: #af4f4c;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  form {
+      background-color: darkgray;
+  }
+p {
+    margin: 20px;
+}
+.rented-bike {
+    background-color: whitesmoke;
+}
+.available-bicycles {
+    background-color: whitesmoke;
+}

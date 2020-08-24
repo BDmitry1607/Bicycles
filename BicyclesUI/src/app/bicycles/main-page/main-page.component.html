@@ -1,0 +1,36 @@
+<body>
+  <h1>Awesome Bike Rental</h1>
+  <form (submit)="addBicycle()" class="forms-input">
+    <div class="form-input">
+      <label for="name">Name</label>
+      <input [(ngModel)]="addBicycleView.name" name="name" placeholder="Bike name">
+    </div>
+    <div class="form-input">
+      <label for="type">Price</label>
+      <input [(ngModel)]="addBicycleView.price" name="price" placeholder="Bike price">
+    </div>
+    <div class="form-input">
+      <label for="country">Type</label>
+      <ng-select class="custom" [items]="types" [(ngModel)]="addBicycleView.type" name="type">
+      </ng-select>
+    </div>
+    <div class="form-input">
+      <input class="submit-button" type="submit" value="Submit">
+    </div>
+  </form>
+
+  <h1>Your rent ({{rentedBicycles.length}})</h1>
+  <div class="rented-bicycles" *ngFor="let bike of rentedBicycles">
+    <div class="rented-bike">
+      <p>{{bike.name}} / {{bike.type}} / {{bike.price}}&#36; <button class="button-rent" (click)="cancelRent(bike)">Cancel rent</button></p>
+    </div>
+  </div>
+
+  <h1>Available bicycles ({{availableBicycles.length}})</h1>
+  <div class="available-bicycles" *ngFor="let bike of availableBicycles">
+    <div class="available-bike">
+      <p>{{bike.name}} / {{bike.type}} / {{bike.price}}&#36; <button class="button-rent" (click)="rentBike(bike)">Rent</button><button class="button-delete" (click)="deleteBicycle(bike.id)">Delete</button></p>
+    </div>
+  </div>
+
+</body>
